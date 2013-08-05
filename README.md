@@ -31,5 +31,5 @@ Python XML library with some basic classes and functions to easly process XML da
     Console mode: LConsole=True (Default in main function) 
       > python CreateSoft.py sample.in.xml sample.out.xml
       
-    Debug (IDE) mode: Turn LConsole=False
+    Debug mode (IDE): Turn LConsole=False
     
