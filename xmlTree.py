@@ -22,7 +22,7 @@ class cXmlTree:
         class XML Tree Builder
     """
     def __init__(self, inFileName):
-        if bool(_Trace):
+        if bool(_Debug):
             print 'xmlDocTree: Init constructor'
         try:
             pT=eTree.XMLParser(remove_blank_text=False)
@@ -37,27 +37,29 @@ class cXmlTree:
     """ Parser events """ 
     def eventDoc(self, parser, elt):
         if bool(_Debug):
-            print 'xmlDocTree: eventDoc'
+            print 'cXmlTree: eventDoc'
         pass
     
     def eventElement(self, parser, elt):
         if bool(_Debug):
-            print ('xmlDocTree: eventElement')
+            print ('cXmlTree: eventElement')
         pass
                
     def eventPI(self, parser, elt):
         if bool(_Debug):
-            print ('xmlDocTree: eventPI')
+            print ('cXmlTree: eventPI')
         pass
     
     def eventComment(self, parser, elt):
         if bool(_Debug):
-            print ('xmlDocTree: eventComment')
+            print ('cXmlTree: eventComment')
         pass
    
     def insertXmlElement(self, newChild, refChild, ipos=-1):
+        if bool(_Debug):
+            print ('cXmlTree: insertXmlElement')
         if (newChild==None) or (refChild==None):
-            sys.stderr.write("ERREUR-imput insertXmlElement: Element newChild or refChild is inconsistent \n\tMSGinfo: newChild=%s refChild=%s" %(newChild,refChild))
+            sys.stderr.write("ERROR-imput insertXmlElement: Element newChild or refChild is inconsistent \n\tMSGinfo: newChild=%s refChild=%s" %(newChild,refChild))
             sys.exit(_ERROR_PROG)
         try:
             parent=refChild.getparent()
@@ -78,8 +80,11 @@ class cXmlTree:
             sys.exit(_ERROR_PROG)
     
     def removeXmlElement(self, Child):
+        if bool(_Debug):
+            print ('cXmlTree: removeXmlElement')
         if (Child==None):
-            sys.stderr.write("WARRING-imput removeXmlElement: Element is incorrect \n\tMSGinfo: ELT=%s" %(Child))
+            if bool(_Trace):
+                sys.stderr.write("WARRING-imput removeXmlElement: Element is incorrect \n\tMSGinfo: ELT=%s" %(Child))
             #sys.exit(_ERROR_PROG)
             return 0
         try:
@@ -92,12 +97,14 @@ class cXmlTree:
 
     """ DTD validation """
     def DTDvalid(self, dtdFile):
+        if bool(_Debug):
+            print ('cXmlTree: DTDvalid')
         DTD = eTree.DTD(dtdFile)
         if DTD.validate(self.root): return True
         else:   return False
         
-    def printxmlDoc(self, outFile):
-        if bool(_Trace):
-            print 'xmlDocTree: printxmlDoc'
+    def printXmlDoc(self, outFile):
+        if bool(_Debug):
+            print 'cXmlTree: printXmlDoc'
         self.docTree.write(outFile,method="xml",xml_declaration=True,encoding="UTF-8",pretty_print=False)
 
