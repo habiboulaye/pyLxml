@@ -19,18 +19,17 @@ Python XML library with some basic classes and functions to easly process XML da
     ClassTemplet: model/example to use to create new classes based on the pyLxml module.
       - ClassTemplet(cXmlTree) : Your class inherits from the generic class
       - You then only have to re-write the event functions that are useful for your needs
-
-
+      
 3. Require-Install:
 
       - python 2.7
       - lxml 2.2.8
       - pyLxml
 
-4. Usage-CMD
-      
+4. Usage-CMD:
+
     Console mode: Turn LConsole=True (main function) 
       > python CreateSoft.py sample.in.xml sample.out.xml
       
-    Debug mode: Turn LConsole=False (main function) 
+    ide-Debug mode: Turn LConsole=False (main function) 
     
