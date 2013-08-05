@@ -24,7 +24,7 @@ class cXmlParser:
             print ('cXmlParser: Init constructor')
         self.xmldocTree = docTree
    
-    def xmlwalker(self, parent, level=0):
+    def xmlWalker(self, parent, level=0):
         if bool(_Trace):
             print ('xmlwalker: Init constructor')
         if parent is None:
@@ -49,7 +49,7 @@ class cXmlParser:
                 if bool(_Debug):
                     print ('\nElement -> {0} {1} {2}'.format(elt.tag, elt.attrib, elt.text))                
                 self.xmldocTree.eventElement(self,elt)
-            self.xmlwalker(elt, level+1)
+            self.xmlWalker(elt, level+1)
             elt=elt.getnext()
     
                  
