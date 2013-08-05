@@ -23,12 +23,12 @@ Usage-dev:
 
 Installation:
 
-  Require:
+Require:
 
       - python 2.7
       - lxml 2.2.8
       
-  Commande
+Usage-CMD
       
     Console mode: Turn LConsole=True (main function) 
       > python CreateSoft.py sample.in.xml sample.out.xml
