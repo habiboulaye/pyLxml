@@ -2,6 +2,8 @@ pyLxml
 ======
 
 Python XML library with some basic classes and functions to easly process XML data.
+
+pyLxml module:
     
     cXmlTree: generic class for building Tree structure for XML data
       - eventElement, eventPI, eventComment ...: event functions
@@ -26,11 +28,11 @@ Installation:
       - python 2.7
       - lxml 2.2.8
       
-  Commande:
+  Commande
       
     Console mode: Turn LConsole=True (main function) 
       > python CreateSoft.py sample.in.xml sample.out.xml
       
     Local model: overwise
-      > Run
+      Run
     
