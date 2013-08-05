@@ -47,7 +47,7 @@ class ClassTemplet(cXmlTree):
         if bool(self._Debug):
             print 'ClassTemplet: xmlProcessing'
         xmlParser = cXmlParser(self)
-        xmlParser.xmlwalker(self.root, level)
+        xmlParser.xmlWalker(self.root, level)
 
 
     # Events: rewrite event-functions that are needs
@@ -93,7 +93,7 @@ def usage():
 def main(argv):
     print "\n\t *_*_*_*_* Start Execution *_*_*_*_*\n"
     
-    LConsole = False
+    LConsole = True
     #---------------------------------------------------------------------------
     if LConsole: # Linux Console
         print ">>> Get commande line arguments"
@@ -127,7 +127,7 @@ def main(argv):
    
     #---------------------------------------------------------------------------
     print ("\n>>> Call cXmlTree:printxmlDoc to produce the (modified) XML output")
-    objTree.printxmlDoc(outFile)
+    objTree.printXmlDoc(outFile)
 
     #---------------------------------------------------------------------------
     print ("\n\t *_*_*_*_* Successful Execution *_*_*_*_*\n\n")
