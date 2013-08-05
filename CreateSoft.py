@@ -93,18 +93,18 @@ def usage():
 def main(argv):
     print "\n\t *_*_*_*_* Start Execution *_*_*_*_*\n"
     
-    LConsole = True
+    LConsole = False
     #---------------------------------------------------------------------------
     if LConsole: # Linux Console
         print ">>> Get commande line arguments"
         if len(sys.argv) == 3:
             inFile=sys.argv[1]
             outFile = sys.argv[2]        
-        else:   #ERREUR !
+        else:   #ERROR !
             sys.stderr.write("\nERROR COMMANDE :\n")
             usage()
             sys.exit(_ERROR_CMD)
-    else:   # Local
+    else:   # Local Execution
         inFile = 'sample.in.xml'
         outFile = 'sample.out.xml'
        
