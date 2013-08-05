@@ -28,8 +28,8 @@ Python XML library with some basic classes and functions to easly process XML da
 
 4/ Usage-CMD:
 
-    Console mode: Turn LConsole=True (main function) 
+    Console mode: LConsole=True (Default in main function) 
       > python CreateSoft.py sample.in.xml sample.out.xml
       
-    ide-Debug mode: Turn LConsole=False (main function) 
+    Debug (IDE) mode: Turn LConsole=False
     
