@@ -21,17 +21,16 @@ Python XML library with some basic classes and functions to easly process XML da
       - You then only have to re-write the event functions that are useful for your needs
 
 
-3. Install-Require:
+3. Require-Install:
 
       - python 2.7
       - lxml 2.2.8
-      - pyLxml ()
+      - pyLxml
 
 4. Usage-CMD
       
     Console mode: Turn LConsole=True (main function) 
       > python CreateSoft.py sample.in.xml sample.out.xml
       
-    Local model: overwise
-      Ø Run
+    Debug mode: Turn LConsole=False (main function) 
     
