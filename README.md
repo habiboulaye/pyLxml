@@ -1,7 +1,7 @@
 pyLxml
 ======
 
-Python XML library with some basic classes and functions to easly process XML data.
+Python fast library with some basic classes and functions to easly process XML data.
 
 1/ pyLxml module:
     
