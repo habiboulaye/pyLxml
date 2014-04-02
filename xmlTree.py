@@ -5,7 +5,7 @@
     ->    class XML Tree Builders
 """
 
-__author__ = "Habib"
+__author__ = "Habiboulaye AMADOU BOUBACAR (habiboulaye@gmail.com)"
 __version__ = "$Revision: 1.12 $"
 __date__ = "$Date: 2013/01/17 15:18:15 $"
 __copyright__ = "Copyright (c) Free 2013"
