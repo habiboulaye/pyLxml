@@ -10,7 +10,7 @@ CMD: python CreateSoft.py in.xml out.xml
 
 """
 
-__author__ = "Habib AMADOU BOUBACAR (hamadou@jouve.fr)"
+__author__ = "Habiboulaye AMADOU BOUBACAR (habiboulaye@gmail.com)"
 __version__ = "$Revision: 1.1 $"
 __date__ = "$Date: 2009/11/18 17:58:11 $"
 __copyright__ = "Copyright (c) free 2013"
